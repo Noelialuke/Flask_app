@@ -2,7 +2,7 @@
 App Web Flask
  Determinar el sexo de la pèrsona en relacion su altura y peso
  
-#PASOS
+# PASOS
 
 pip3 install scikit-learn
 
