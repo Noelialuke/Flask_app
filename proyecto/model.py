@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 import joblib
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data.csv", sep=";")
 
 X = df[["Altura", "Peso"]]
 y = df["Sexo"]
