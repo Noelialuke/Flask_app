@@ -17,19 +17,20 @@ def main():
         clf = joblib.load("clf.pkl")
         
         # Get values through input bars
-        height = request.form.get("Altura")
-        weight = request.form.get("Peso")
+        Altura = request.form.get("Altura")
+        Peso = request.form.get("Peso")
         
         # Put inputs to dataframe
         X = pd.DataFrame([[Altura, Peso]], columns = ["Altura", "Peso"])
         
-        # Get prediction
+        # Get prediction 
         prediction = clf.predict(X)[0]
+        res="El sexo de la persona es: "+prediction
         
     else:
-        prediction = ""
+        res = ""
         
-    return render_template("website.html", output = prediction)
+    return render_template("website.html", output = res)
 
 # Running the app
 if __name__ == '__main__':
