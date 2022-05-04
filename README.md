@@ -1,6 +1,7 @@
 # Flask_app
 App Web Flask
  Determinar el sexo de la pèrsona en relacion su altura y peso
+ noelialuque.me:5000
  
 # PASOS
 
